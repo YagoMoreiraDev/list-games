@@ -1,4 +1,4 @@
-package com.yagodev.dslist.entities;
+package com.yagodev.dslist.domain.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
