@@ -1,11 +1,13 @@
 package com.yagodev.dslist.domain.dtos;
 
 import com.yagodev.dslist.domain.entities.Game;
-import lombok.Getter;
+import com.yagodev.dslist.domain.projections.GameMinProjection;
+import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.BeanUtils;
 
 @NoArgsConstructor
-@Getter
+@Data
 public class GameMinDTO {
 
     private Long id;
@@ -15,10 +17,10 @@ public class GameMinDTO {
     private String shortDescription;
 
     public GameMinDTO(Game entity) {
-        id = entity.getId();
-        title = entity.getTitle();
-        year = entity.getYear();
-        imgUrl = entity.getImgUrl();
-        shortDescription = entity.getShortDescription();
+        BeanUtils.copyProperties(entity, this);
+    }
+
+    public GameMinDTO(GameMinProjection projection) {
+        BeanUtils.copyProperties(projection, this);
     }
 }
