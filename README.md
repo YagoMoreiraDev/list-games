@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-Este é um projeto pessoal de backend desenvolvido no Intensivão Java, ministrado pelo grande professor Nélio Alve, que tem como propósito praticar e aprimorar habilidades em API REST usando o framework Spring.
+Este é um projeto pessoal de backend desenvolvido no Intensivão Java, ministrado pelo grande professor Nélio Alves, que tem como propósito praticar e aprimorar habilidades em API REST usando o framework Spring.
 
 ## Objetivo do Projeto
 
